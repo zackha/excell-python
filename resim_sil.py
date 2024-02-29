@@ -28,6 +28,6 @@ else:
                 dosya_yolu = os.path.join(klasor_yolu, dosya_adi)
                 if os.path.exists(dosya_yolu):
                     os.remove(dosya_yolu)
-                    print(f"{dosya_adi} silindi.")
+                    print(f"{dosya_adi} onaylanmadı.")
 
         excel_dosyasi.close()
