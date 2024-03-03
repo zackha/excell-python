@@ -19,7 +19,7 @@ else:
         excel_dosyasi = openpyxl.load_workbook(excel_dosyasi_yolu)
         sayfa = excel_dosyasi.active
 
-        dosya_adlari = [sayfa.cell(row=i, column=4).value for i in range(2, sayfa.max_row + 1) if sayfa.cell(row=i, column=4).value is not None]
+        dosya_adlari = [sayfa.cell(row=i, column=2).value for i in range(2, sayfa.max_row + 1) if sayfa.cell(row=i, column=2).value is not None]
 
         klasordeki_dosyalar = os.listdir(klasor_yolu)
 
